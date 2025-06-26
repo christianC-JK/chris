@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Stack Web Development</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background:linear-gradient(grey,white);
+    }
+    header{
+      background-image: url('kabat.jpg');
+      background-repeat: repeat;
+      background-position: center;
+      background-color:black;
+      background-blend-mode: overlay;
+    }
+    h1{
+      color:wheat;
+      width: 1400px; height: 15px;
+    }
+    h3{
+      color: goldenrod;
+      width:1380px ; height:12p x ;
+    }
+    header {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      color: white;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background: #333;
+      border-radius: 15px;
+      color: rgb(245, 173, 40);
+    }
+
+    .section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section h2 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 5px;
+      background-color: grey;
+      border-radius: 8px;
+
+    }
+
+    .card {
+      background:white;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    .card h2:hover{
+      color: rgb(247, 179, 10);
+    }
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    .footer-links a {
+      color: #ddd;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .block {
+      animation-name: scrolling linear;
+      animation-timing-function: view();
+      animation-range: entry 0% cover 50%;
+    }
+    @keyframes scrolling{
+      from{
+        opacity: 0;
+        transform: translateX(-150px);
+      }
+      to{
+        opacity: 1;
+        transform: translateX(OPX);
+      }
+    }
+    .blocker{
+          width: 1341px;
+          height: 340px;
+          overflow: hidden;
+          position: relative;
+          border-radius: 9px;
+          width: 22rem;
+          height: 20rem;
+          align-content: center;
+          justify-content: center;
+    }
+    .block{
+          width: 300%;
+          height: 100%;
+          display: flex;
+          animation: slide 1s 1s infinite;    
+    }
+    .image-container {
+            display: flex; 
+            justify-content: center;
+            margin-bottom: 20px; 
+            border-radius: 1px;
+        }
+
+        .image-wrapper {
+            position: relative; 
+            width: 260px;  
+            height: 200px;  
+            overflow: hidden; 
+            margin-right: 10px;
+        }
+        .image-wrapper img {
+            position: absolute; 
+            width: 100%;  
+            height: 100%;  
+            transition: opacity 0.5s ease;  
+        }
+        .image-wrapper img.hover-image {
+            opacity: 0;  
+        }
+        .image-wrapper:hover img.default-image {
+            opacity: 0;  
+        }
+        .image-wrapper:hover img.hover-image {
+            opacity: 1; 
+        }
+        .welcome{
+          text-align: center;
+        }
+        .welcom{
+          background-image: url('shoe.jpg');
+          border-radius: 10px;
+          box-shadow: 10px;
+        }
+        .welcom h3{
+          color: white;
+          text-align: center;
+        }
+        .whyus{
+          text-align: center;
+        }
+        .whyu h3{
+           text-align: center;
+           color: bisque;
+        }
+        .whyu{
+          background-image: url('tree.jpeg');
+          border-radius: 10px;
+          box-shadow: 10px;
+        }
+        .button{
+          color: black;
+          background-color:rgb(219, 216, 216);
+          border-radius: 8px;
+          border-color: #ddd;
+        }
+        .button:hover{
+          color: white;
+          background-color: grey;
+        }
+        .butto{
+          color: black;
+          background-color: rgba(236, 232, 232, 0.932);
+          border-radius: 8px;
+          border-color: #ddd;
+        }
+        .butto:hover{
+          color: white;
+          background-color: #726e6e;
+        }
+        .ten{
+            background-color: black;
+            color: white;
+        }
+        .footer-links a{
+          color: blue;
+        }
+        .footer-links a:hover{
+          color: rgba(255, 0, 0, 0.685);
+        }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CHRISS STYLESTEP</h1><br>
+   &nbsp;&nbsp; <h3></h3><br><br>
+   <h3>WELCOME</h3>
+  </header>
+
+  <nav>
+    <a href="criss1.html">Home</a>
+    <a href="office.html">Office Shoes</a>
+    <a href="fassion.html">Fassion Shoes</a>
+    <a href="chidren.html">chidren Shoes</a>
+    <a href="sport.html">Sport Shoes</a>
+  </nav>
+  <div class="image-container">
+    <div class="image-wrapper">
+        <img src="download (2) - Copy.webp" alt="Image 1" class="default-image">
+        <img src="download (10).webp" alt="Image 1 Hover" class="hover-image">
+    </div>
+    <div class="image-wrapper">
+        <img src="download (9).webp" alt="Image 2" class="default-image">
+        <img src="download (8).webp" alt="Image 2 Hover" class="hover-image">
+    </div>
+    <div class="image-wrapper">
+        <img src="download (6).webp" alt="Image 3" class="default-image">
+        <img src="download (1) (2).jpeg" alt="Image 3 Hover" class="hover-image">
+    </div>
+    <div class="image-wrapper">
+        <img src="AdobeStock_1346191557_Preview.jpeg" alt="Image 4" class="default-image">
+        <img src="AdobeStock_1350650979_Preview.jpeg"alt="Image 4 Hover" class="hover-image">
+    </div>
+    <div class="image-wrapper">
+        <img src="AdobeStock_1148995474_Preview.jpeg" alt="Image 5" class="default-image">
+        <img src="AdobeStock_1307845291_Preview.jpeg" alt="Image 5 Hover" class="hover-image">
+    </div>
+</div>
+<div class="welcome">
+  <h2>Welcome To Chriss Stylestep</h2>
+  <div class="welcom">
+    <h3>We are proud to be your go-to store for high-quality,stylish,and affordable footware.<br>At chriss Stepstyle, Our goal is simple: To help every step of your lifeWhether you are<br> looking for Everyday comfort,Formal elegance,sporty style or something trendly, We<br> have a wide selection to choose from.Our Team carefully selects each pair to make sure<br> it meets your neeeds in comfort, quality and style</h3>
+  </div>
+</div>
+<div class="whyus">
+  <h2>Why Choose Us?</h2>
+  <div class="whyu">
+    <h3> wide range of shoes for men, women, and children
+
+      Affordable prices without compromising<br> quality
+      
+      Friendly customer service and a smooth shopping experience
+      
+      Regular updates with the <br>latest trends in footwear
+      
+      
+      We believe shoes are more than just fashion They are part of your<br> lifestyle. Come explore and step into your best look with us.
+      
+      Thank you for choosing Chriss Stylestep
+      
+      </h3>
+  </div>
+  <div class="ten">
+    <h3 style="color: white;">&copy;&nbsp;2025 christian kanunga. All right reserved</h3>
+    <div class="footer-links">
+      <a href="#">About</a> | 
+      <a href="#">Contact</a> | 
+      <a href="#">Terms</a> | 
+      <a href="#">Privacy</a>
+    </div>
+  </div>
+</div>
+  
